@@ -1,0 +1,206 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+$darktext:#666666;
+$mediumtext:#b2b2b2;
+$lighttext:#e1e1e1;
+$bluelevel1:#456281;
+$bluelevel2:#1a8fda;
+$bluelevel3:#26a0ee;
+$flat-asphalt-dark:#2c3e50;
+$flat-asphalt-light:#34495e;
+
+textarea{
+  resize:none;
+}
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.apply_transactions{
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+}
+.display-errors{
+  display:inline-block;
+  position:fixed;
+  width:20%;
+  left:40%;
+  top:-50%;
+  text-align:center;
+  @extend .apply_transactions;
+}
+.display-errors.show{
+  top:2%;
+}
+.apply_transactions{
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+}
+#wrapper{
+  margin-bottom:20px;
+  min-height:550px;
+}
+ul#forum_container{
+  margin:0;
+  padding:0;
+}
+h1.main-header{
+  border-bottom:2px dashed #ccc;
+  padding:10px 0 10px;
+}
+li{
+  list-style:none;
+}
+li.forum-block{
+  @extend .clearfix;
+  border-bottom:1px solid $lighttext;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  .forum-header{
+    padding:10px 20px 5px 20px;
+    min-height:20px;
+    margin-bottom: 10px;
+    background: $bluelevel1;
+    border-radius: 5px;
+    .forum-title{
+      color:white;
+      font-weight:lighter;
+      font-size:20px;
+    }
+    .creator-name{
+      color:$lighttext;
+      float:right;
+      font-size:12px;
+      .name{
+        color:$mediumtext;
+      }
+    }
+  }
+  #edit_forum_content{
+    width:55%;
+    height:100px;
+  }
+  .forum-content{
+    width:70%;
+    display:inline-block;
+    margin:0 5px;
+    background:white;
+    color:$darktext;
+    margin-bottom:10px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height:24px;
+    font-weight: lighter;
+  }
+  .edit_forum_link{
+    margin-right:15px;
+  }
+}
+.new_forum_link_container{
+  min-height:30px;
+  margin-bottom:30px;
+  #new_forum_link{
+    float:right;
+  }
+}
+#new_forum{
+  background: #f2f2f2;
+  text-align: center;
+  padding: 20px 0;
+  h2{
+    color:$darktext;
+  }
+  input{
+    width:40%;
+  }
+  textarea{
+    width:40%;
+    min-height:100px;
+  }
+  input[type="submit"]{
+    width:160px;
+  }
+}
+
+
+.edit_form_container{
+  background:#f2f2f2;
+  width:60%;
+  padding:0 20px;
+  h3{
+    padding-top:10px;
+    color:$mediumtext;
+  }
+  .btn{
+    margin-bottom:10px;
+  }
+}
+
+.new_comment{
+  border:1px solid #ccc;
+  float:left;
+  width:30%;
+  background:#f2f2f2;
+  padding:10px;
+  border-radius:5px;
+  form{
+    margin-bottom:0px;
+  }
+  input, textarea{
+    width:90%;
+  }
+  h3{
+    color:$mediumtext;
+    margin:0;
+  }
+}
+.CommentIndex{
+  width:50%;
+  float:right;
+}
+.comment-block{
+  margin-top:5px;
+  padding:8px;
+  border-bottom:1px solid #ccc;
+  .icon-comment{
+    font-size:18px;
+    color:$darktext;
+  }
+  .commentor-name{
+    color:$darktext;
+  }
+  .comment-content{
+    color:$mediumtext; 
+  }
+  .delete_comment_link{
+    cursor:pointer;
+    float:right;
+    font-size:18px;
+    color:$darktext;
+  }
+}
+.footer{
+  background:$flat-asphalt-light;
+  height:50px;
+}

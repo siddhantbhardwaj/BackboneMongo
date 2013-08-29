@@ -1,0 +1,10 @@
+<div class="new_forum_link_container"><span id="new_forum_link" class="btn btn-success"><i class="icon-white icon-plus"></i>Add new Forum</span></div>
+<form id="new_forum" class="hide">
+  <h2>New Forum</h2>
+	<input type="text" id="new_forum_creator_name" name="creator_name" placeholder="Your Name"></input><br>
+	<input type="text" id="new_forum_title" name="title" placeholder="Forum Title"></input><br>
+  <textarea id="new_forum_content" name="content" placeholder="Content"></textarea><br>
+	<input type="submit" value="Create Forum" class="btn btn-success"></input>
+</form>
+
+<ul id="forum_container"></ul>

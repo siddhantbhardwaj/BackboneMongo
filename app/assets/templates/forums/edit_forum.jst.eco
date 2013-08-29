@@ -1,0 +1,8 @@
+<form id="edit_forum">
+  <h3>Edit Forum</h3>
+	<input type="text" id="edit_forum_creator_name" name="creator_name" placeholder="Your Name"></input><br>
+	<input type="text" id="edit_forum_title" name="title" placeholder="Forum Title"></input><br>
+	<textarea id="edit_forum_content" name="content" placeholder="Content"></textarea><br>
+  <input type="submit" value="Update Forum" class="btn btn-success"></input>
+	<span id="cancel_btn" class="btn btn-inverse">Cancel</span>
+</form>

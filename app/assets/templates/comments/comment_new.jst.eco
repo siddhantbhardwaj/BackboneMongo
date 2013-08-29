@@ -1,0 +1,6 @@
+<form id="new_comment">
+  <h3>Post Comment</h3>
+  <input type="text" id="creator_name" name="creator_name" placeholder="Your name"/><br>
+  <textarea type="text" id="content" name="content" placeholder="Comment"/><br>
+  <input type="submit" name="submit" value="submit" class="btn btn-success"/>
+</form>

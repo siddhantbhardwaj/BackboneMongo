@@ -1,0 +1,12 @@
+<div class="forum-header">
+  <span class="forum-title"><%= @forum.get("title") %></span>
+  <span class="creator-name">by <span class="name"><%= @forum.get("creator_name") %></span></span>
+</div>
+
+<div class="forum-content">
+  <%= @forum.get("content") %>
+</div>
+<span class="delete_forum_link btn btn-danger" style="display:inline-block; float:right; cursor:pointer;">Delete</span>
+<span class="edit_forum_link btn-info btn" style="display:inline-block; float:right; cursor:pointer;">Edit</span>
+<div class="edit_form_container"></div>
+<div class="new_comment"></div>

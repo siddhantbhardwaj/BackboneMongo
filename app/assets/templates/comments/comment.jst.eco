@@ -1,0 +1,8 @@
+<i class="icon icon-comment"></i>
+<span class="commentor-name"><%= @comment.get("creator_name") %> :</span>
+<span class="comment-content">
+  <span class="triangle"></span>
+  <%= @comment.get("content") %>
+</span>
+
+<i class="icon icon-trash delete_comment_link"></i>
